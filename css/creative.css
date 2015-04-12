@@ -52,7 +52,14 @@ p {
 }
 
 .bg-primary {
-    background-color: #f05f40;
+    background-color: black;
+}
+
+.image-responsive, .profilepic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
 }
 
 .bg-dark {
