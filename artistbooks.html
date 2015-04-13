@@ -9,12 +9,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Katie Patch</title>
+    <title>Paintings</title>
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
+      <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
@@ -25,6 +25,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
 
+    <!-- Portfolio page CSS -->
+    <link rel="stylesheet" href="css/portfolio.css" type="text/css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -34,7 +37,7 @@
 
 </head>
 
-<body id="page-top">
+<body>
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -46,20 +49,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Katie Patch</a>
+                <a class="navbar-brand page-scroll" href="index.html">Katie Patch</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a href="#portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a href="index.html#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -68,100 +71,115 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>Katie Patch</h1>
-                <hr>
-                <p>Artist - Illustrator - Designer</p>
-                <a href="#portfolio" class="btn btn-primary btn-xl page-scroll">Portfolio</a>
+     <!-- Page Header -->
+        <div class="row top-header">
+            <div class="col-lg-12">
+                <h1 class="page-header">ARTIST BOOKS</h1>
             </div>
         </div>
-    </header>
+        <!-- /.row -->
+    <!-- Page Content -->
+    <div class="container-fluid main-portfolio">
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <a href="#{}" class="portfolio-box">
+                    <img class="img-responsive" src="img/beekeeper.jpg" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                          <!--   <div class="project-category text-faded">
+                                Paintings
+                            </div> -->
+                            <div class="project-name">
+                                Beekeeper's Meeting
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+             <div class="col-md-6 portfolio-item">
+                <a href="#" class="portfolio-box">
+                    <img class="img-responsive" src="img/marys.jpg" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                          <!--   <div class="project-category text-faded">
+                                Paintings
+                            </div> -->
+                            <div class="project-name">
+                                Marys
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->
 
-<!--     <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
-                    <hr class="primary">
-                </div>
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <a href="#" class="portfolio-box">
+                    <img class="img-responsive" src="img/tiber.jpg" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                          <!--   <div class="project-category text-faded">
+                                Paintings
+                            </div> -->
+                            <div class="project-name">
+                                Tiber
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+        <!-- /.row -->
+
+  </div>
+    <!-- /.container -->
 
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="paintings.html" class="portfolio-box">
-                        <img src="img/paintings.jpg" class="img-responsive" alt="paintings">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                              <!--   <div class="project-category text-faded">
-                                    Paintings
-                                </div> -->
-                                <div class="project-name">
-                                    Paintings
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="artistbooks.html" class="portfolio-box">
-                        <img src="img/artistbooks.jpg" class="img-responsive" alt="artistbooks">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                              <!--   <div class="project-category text-faded">
-                                    Artist Books
-                                </div> -->
-                                <div class="project-name">
-                                    Artist Books
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-md-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="img/sketchbooks.jpg" class="img-responsive" alt="sketchbooks">
+                        <img class="img-responsive" src="img/paintings.jpg" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                               <!--   <div class="project-category text-faded">
-                                    Sketch Books
+                                    Paintings
+                                </div> -->
+                                <div class="project-name">
+                                    Paintings
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="artistbooks.html" class="portfolio-box">
+                        <img class="img-responsive" src="img/artistbooks.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                              <!--   <div class="project-category text-faded">
+                                    Paintings
+                                </div> -->
+                                <div class="project-name">
+                                    Artist Books
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img class="img-responsive" src="img/sketchbooks.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                              <!--   <div class="project-category text-faded">
+                                    Paintings
                                 </div> -->
                                 <div class="project-name">
                                     Sketch Books
@@ -170,31 +188,11 @@
                         </div>
                     </a>
                 </div>
-            </div>
-        </div>
-    </section>
 
-     <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">About Me</h2>
-                    <img class="img-responsive profilepic" src="img/ProfilePic.jpg" height="200" width="200" alt="profilepic">
-                    <hr class="light">
-                    <p class="text-faded">I'm an artist living in New Orleans and currently on a quest to code. You can see my web development portfolio <a href="http://katiepatch.github.io/">here</a>. I paint in my spare time. You can see updates more often on my blog.</p>
-                </div>
             </div>
-        </div>
+            <!-- /.row -->
+        </div> <!-- container fluid -->
     </section>
-
-<!--     <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Free Download at Start Bootstrap!</h2>
-                <a href="#" class="btn btn-default btn-xl wow tada">Download Now!</a>
-            </div>
-        </div>
-    </aside> -->
 
     <section id="contact">
         <div class="container">
