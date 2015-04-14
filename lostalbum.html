@@ -28,6 +28,8 @@
     <!-- Portfolio page CSS -->
     <link rel="stylesheet" href="css/portfolio.css" type="text/css">
 
+    <link href="css/dist/ekko-lightbox.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -74,7 +76,7 @@
     <!-- Page Content -->
     <div class="row top-header">
         <div class="col-lg-12">
-            <h1 class="page-header">The Lost Album</h1>
+            <h1 class="page-header">THE LOST ALBUM</h1>
         </div>
     </div>
 
@@ -231,6 +233,55 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="css/dist/ekko-lightbox.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function ($) {
+            // delegate calls to data-toggle="lightbox"
+            $(document).delegate('*[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', 'click', function(event) {
+                event.preventDefault();
+                return $(this).ekkoLightbox({
+                    onShown: function() {
+                        if (window.console) {
+                            return console.log('Checking our the events huh?');
+                        }
+                    },
+                    onNavigate: function(direction, itemIndex) {
+                        if (window.console) {
+                            return console.log('Navigating '+direction+'. Current item: '+itemIndex);
+                        }
+                    }
+                });
+            });
+            //Programatically call
+            $('#open-image').click(function (e) {
+                e.preventDefault();
+                $(this).ekkoLightbox();
+            });
+            $('#open-youtube').click(function (e) {
+                e.preventDefault();
+                $(this).ekkoLightbox();
+            });
+            // navigateTo
+            $(document).delegate('*[data-gallery="navigateTo"]', 'click', function(event) {
+                event.preventDefault();
+                return $(this).ekkoLightbox({
+                    onShown: function() {
+                        var a = this.modal_content.find('.modal-footer a');
+                        if(a.length > 0) {
+                            a.click(function(e) {
+                                e.preventDefault();
+                                this.navigateTo(2);
+                            }.bind(this));
+                        }
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 
