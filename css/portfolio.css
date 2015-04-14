@@ -43,3 +43,8 @@ html, body {
 #contact {
   background-color: white;
 }
+
+.thumbnail {
+  border: none;
+  padding: 0;
+}
