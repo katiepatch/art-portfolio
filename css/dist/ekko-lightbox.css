@@ -25,7 +25,6 @@
   height: 100%;
   font-size: 30px;
   color: #fff;
-  text-shadow: 2px 2px 4px #000;
   opacity: 0;
   filter: dropshadow(color=#000000, offx=2, offy=2);
   -webkit-transition: opacity 0.5s;
@@ -60,3 +59,4 @@
 .ekko-lightbox .modal-footer {
   text-align: left;
 }
+
